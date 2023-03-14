@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,12 +13,13 @@
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body onload="olamundo()">
     <div class="fundo">
-    <form class="container">
-   
-   <h1 class="carro">Escolha a marca do seu veículo</h1>
-    <select class="marca" id="marca">
+        <form class="container">
+
+            <h1 class="carro">Escolha a marca do seu veículo</h1>
+            <select class="marca" id="marca">
     <option>Ford</option>
     <option>Fiat</option>
     <option>Chevrolet</option>
@@ -25,16 +27,23 @@
     <option>VW</option>
     <option>Outras Marcas</option>
     </select>
-    
-    <input type="text" placeholder="Digite o modelo" id="modelo">
-	<input type="number" placeholder="Insira a km percorrida" id="km">
-    <input type="number" placeholder="Insira o consumo de gasolina" id="gas">
-    <input type="button" value="CALCULAR" onclick="calcularconsumo()">
-    <br>
-    <div class= "linha">
-    <span id="consumo"></span>
+
+            <input type="text" placeholder="Digite o modelo" id="modelo">
+            <input type="number" placeholder="Insira a km percorrida" id="km">
+            <input type="number" placeholder="Insira o consumo de gasolina" id="gas">
+            <input type="button" value="CALCULAR" onclick="calcularconsumo()">
+            <br>
+            <div class="linha">
+                <span id="consumo"></span>
+            </div>
+            <div class="table">
+                <p id="paragraph1">Consumo maior que 20km/l - Extremamente econômico</p>
+                <p id="paragraph2">Consumo maior que 12km/l porém menor que 20km/l - Econômico</p>
+                <p id="paragraph3">Consumo maior que 8km/l porém menor que 12km/l - Normal</p>
+                <p id="paragraph4">Consumo menor que 8km/l - Alto Consumo</p>
+            </div>
+        </form>
     </div>
-    </form>
-</div>
 </body>
+
 </html>

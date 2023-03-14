@@ -11,6 +11,8 @@ body{
 .container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
@@ -63,8 +65,8 @@ input[type = "button"]:hover{
      height: 5vh;
      position: relative;
      display: flex;
-     justify-items: center;
-     left: 60px;    
+     justify-items: center;    
+     align-items: center;
      margin-bottom: 10px;
 
 }
@@ -75,4 +77,12 @@ input[type = "button"]:hover{
     align-self: center;
     margin-bottom: 5vh;
     color: white;
+}
+
+
+.table > p{
+    color: white;
+    border: solid black 1px;
+    margin: 0px;
+    font-size: 25px;
 }
